@@ -20,7 +20,7 @@ crying and fighting.
 I hate losing games, so I want to write a program to give me the
 best chance of winning. Assume you have a dataset of all major
 world cities like this one.
-<a href="https://datahub.io/core/world-cities>Major Cities</a>
+<!--<a href="https://datahub.io/core/world-cities>Major Cities</a>-->
 </p>
 <p>
 Your goal is to implement the function
