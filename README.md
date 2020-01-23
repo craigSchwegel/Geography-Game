@@ -30,7 +30,7 @@ that your goal is not simply to play the game but to maximize your
 chances of winning it. Also note that you will lose if you repeat
 a city or use a city for which there is no valid response.
 </p>
- *
+<p>
 <b>Solution:</b>
 The program loads the list of cities in a Trie structure partitioned
 by the last letter of the city name.  Partitioning by last letter
@@ -38,6 +38,7 @@ allows us to select a city name with the fewest responses.  In addition,
 we need to keep track of the count of cities that start with a letter and
 sort that list to efficiently look up the next city with the fewest
 responses.
+</p>
 
 <b>How does it work?</b>
 There are 3 properties files, one for each program:
