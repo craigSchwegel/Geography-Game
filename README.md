@@ -38,3 +38,20 @@ allows us to select a city name with the fewest responses.  In addition,
 we need to keep track of the count of cities that start with a letter and
 sort that list to efficiently look up the next city with the fewest
 responses.
+
+<b>How does it work?</b>
+There are 3 properties files, one for each program:
+player1.properties
+controller.properties
+player2.properties
+
+1. Each Player will communicate with the Controller by writing to a file for the response.
+2. The Controller sits in the middle and handles the inter-op between the programs.
+3. In the middle, the Controller will validate responses.
+4. Controller files are named like CTRLPlayer2_1 and CTRLPlayer2_Trigger_1
+5. Player files are named like Player1_1 and Player1_TriggerRSP_1
+6. Every communication produces two files, one for the data and the second for the trigger
+7. File names are indexed and are kept in sync by increasing each iteration
+8. Player1 starts the game with the first city (identifed in properties file)
+9. To setup a submission to play against another player in Java, copy the code commented with "Controller inter-op code begin"
+10. Then change the main() to read the properties file, load the data and call play() in the inter-op section
